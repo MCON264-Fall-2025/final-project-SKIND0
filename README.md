@@ -23,13 +23,14 @@ By using a Queue, the system guarantees a FIFO seating process, ensuring that gu
  I used a TreeMap (BST)	in SeatingPlanner.java to store the final seating chart.
 A TreeMap is a BST implementation that keeps the table IDs sorted automatically in ascending order which I wanted
 to organize my seating planner.
- I used a Queue (FIFO) in TaskManager.java for upcoming tasks. Using FIFO ensures that tasks are handled in the order they were created, 
-which is the exact functionality I wanted the tasks to do list in.
+ I used a Deque (FIFO) in TaskManager.java for upcoming tasks. Using FIFO ensures that tasks are handled in the order they were created, 
+which is the exact functionality I wanted the tasks to do list in. I used Deque instead of a regular Queue because i needed
+to be able to have the addFirst() and add the task i just undid to the front of the Deque.
  I used a Stack (LIFO) in TaskManager.java for the undo history. Using LIFO allows us to pop the very last completed task back into the queue.
 
 2- Which sorting and searching algorithms you used
- I used the Bubble Sort in VenueSelector to manually sort venues by cost and capacity O(N^2) 
-I could have used Collections.sort() for more efficeincy but DID YOU WANT US TO ACTUALLY CODE AN ALGO LIKE BUBBLE?
+ I used the Bubble Sort in VenueSelector to manually sort venues by cost and capacity O(N^2)  bc I thought I had to make my own
+I could have used Collections.sort() for more efficeincy but I coded my own instead. (Professor said she wont take off points:)
  I used a Red-Black-Tree under the hood in SeatingPlanner via TreeMap. 
 This ensures table IDs are always stored in their natural numerical order O(log N).
  I used Key-Based Searching= Hashing in GuestListManager through a HashMap for guest lookups by name O(1)

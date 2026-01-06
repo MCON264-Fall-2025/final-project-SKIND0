@@ -26,8 +26,8 @@ public class GuestListMangerTest {
         Guest guest = new Guest("Aviva", "Family");
         //act
         manager.addGuest(guest);
-        // assert- Should be found in Map via findGuest
-        assertEquals(guest, manager.findGuest("Aviva"));
+        // assert- Should be found in Map via findGuest using composite key
+        assertEquals(guest, manager.findGuest("Aviva-Family"));
     }
 
     @Test
@@ -37,7 +37,8 @@ public class GuestListMangerTest {
         Guest guest = new Guest("Aviva", "Friends");
         //act
         manager.addGuest(guest);
-        manager.removeGuest("Aviva");
+        // Updated to pass both name and tag
+        manager.removeGuest("Aviva", "Friends");
         // assert- Guest should no longer be in the LinkedList
         assertFalse(manager.getAllGuests().contains(guest));
     }
@@ -48,30 +49,42 @@ public class GuestListMangerTest {
         GuestListManager manager = new GuestListManager();
         manager.addGuest(new Guest("Aviva", "Friends"));
         //act
-        manager.removeGuest("Aviva");
+        // Updated to pass both name and tag
+        manager.removeGuest("Aviva", "Friends");
         // assert- Guest should no longer be in the Map
-        assertNull(manager.findGuest("Aviva"));
+        assertNull(manager.findGuest("Aviva-Friends"));
     }
 
     @Test
-    void testDuplicateNameIsNotAdded() {
+    void testDuplicateNameWithDifferentTagIsAdded() {
         //arrange
         GuestListManager manager = new GuestListManager();
         manager.addGuest(new Guest("Aviva", "Family"));
+        // This is no longer a duplicate because the Tag is different
         manager.addGuest(new Guest("Aviva", "Work"));
 
-        //assert- Should ignore duplicates based on the Name key in Map
+        //assert- Should allow different groups even if name is the same
+        assertEquals(2, manager.getGuestCount());
+    }
+
+    @Test
+    void testExactDuplicateIsNotAdded() {
+        //arrange
+        GuestListManager manager = new GuestListManager();
+        manager.addGuest(new Guest("Aviva", "Family"));
+        manager.addGuest(new Guest("Aviva", "Family"));
+
+        //assert- Should ignore exact duplicates (Same Name AND Same Tag)
         assertEquals(1, manager.getGuestCount());
     }
+
     @Test
-    void testLookingUpGuestByName() {
+    void testLookingUpGuestByNameAndTag() {
         GuestListManager manager = new GuestListManager();
         Guest guest = new Guest("Aviva", "Co-Worker");
         manager.addGuest(guest);
-
-        // Behavior: Required lookup functionality (checks the HashMap efficiency)
-        Guest found = manager.findGuest("Aviva");
-        assertNotNull(found, "Lookup should find the guest by name");
+        Guest found = manager.findGuest("Aviva-Co-Worker");
+        assertNotNull(found, "Lookup should find the guest by composite key");
         assertEquals("Co-Worker", found.getGroupTag(), "Lookup should return the correct guest data");
     }
 }

@@ -4,8 +4,9 @@ import edu.course.eventplanner.model.Task;
 import java.util.*;
 
 public class TaskManager {
-    private final Queue<Task> upcoming = new LinkedList<>();
+    private final Deque<Task> upcoming = new LinkedList<>();
     private final Stack<Task> completed = new Stack<>();
+
     public void addTask(Task task) {
         if(task!=null){
             upcoming.add(task);
@@ -24,10 +25,9 @@ public class TaskManager {
     public Task undoLastTask() {
         if(completed.isEmpty())
             return null;
-        //SHOULD I ADD IT TO THE END OF THE QUEUE OR NOT???
-        // undo the most recent task and then add it to the end of the upcoming task to do list.
+        // undo the most recent task and then add it to the front of the upcoming task to do list.
         Task taskUndone= completed.pop();
-        upcoming.add(taskUndone);
+        upcoming.addFirst(taskUndone);
         return taskUndone;
     }
     public int remainingTaskCount() {
