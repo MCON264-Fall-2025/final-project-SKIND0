@@ -14,6 +14,8 @@ public class SeatingPlanner {
         if (guests.isEmpty()) {
             return seating;
         }
+
+        // Group guests by tag into separate queues
         Map< String, Queue<Guest>> groupQueues = new HashMap<>();
         for (Guest guest : guests) {
             String tag = guest.getGroupTag();
@@ -45,6 +47,7 @@ public class SeatingPlanner {
                 if (!queue.isEmpty()) {
                     stillHasGuests = true;
 
+                    // Move to next table if current is full
                     if (seatsUsedAtCurrentTable >= maxSeatsPerTable) {
                         currentTable++;
                         if (currentTable > maxTables) {

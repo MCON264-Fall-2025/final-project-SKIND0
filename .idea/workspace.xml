@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12368d1e-8f5d-4447-87ad-5d1eb510728a" name="Changes" comment="" />
+    <list default="true" id="12368d1e-8f5d-4447-87ad-5d1eb510728a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/course/eventplanner/service/GuestListManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/course/eventplanner/service/GuestListManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/course/eventplanner/service/SeatingPlanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/course/eventplanner/service/SeatingPlanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/course/eventplanner/service/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/course/eventplanner/service/TaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/final-project-SKIND0/edu/course/eventplanner/service/GuestListManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/out/production/final-project-SKIND0/edu/course/eventplanner/service/GuestListManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/final-project-SKIND0/edu/course/eventplanner/service/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/out/production/final-project-SKIND0/edu/course/eventplanner/service/TaskManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/test/final-project-SKIND0/edu/course/eventplanner/GuestListManagerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/out/test/final-project-SKIND0/edu/course/eventplanner/GuestListManagerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/test/final-project-SKIND0/edu/course/eventplanner/TaskManagerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/out/test/final-project-SKIND0/edu/course/eventplanner/TaskManagerTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,6 +94,7 @@
       <workItem from="1767299632185" duration="28000" />
       <workItem from="1767723197293" duration="3313000" />
       <workItem from="1767737856959" duration="91000" />
+      <workItem from="1768361887007" duration="951000" />
     </task>
     <servers />
   </component>

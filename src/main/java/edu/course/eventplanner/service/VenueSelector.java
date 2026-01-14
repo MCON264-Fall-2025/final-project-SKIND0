@@ -10,6 +10,7 @@ public class VenueSelector {
     }
 
     public Venue selectVenue(double budget, int guestCount) {
+        // Filter valid venues
         List<Venue> validVenues = new ArrayList<>();
         for (Venue v : venues) {
             if (v.getCost() <= budget && v.getCapacity() >= guestCount) {
