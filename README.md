@@ -17,7 +17,7 @@ Data Structures Used
 private final LinkedList<Guest> guests
 supports insertion order and sequential iteration through guest list.
 
--Hashmap (GuestListManager)
+- Hashmap (GuestListManager)
 private final Map<String, Guest> guestByName
 used alongside LinkedList - both kept synchronized. and is essential for fast guest searching. 
 
