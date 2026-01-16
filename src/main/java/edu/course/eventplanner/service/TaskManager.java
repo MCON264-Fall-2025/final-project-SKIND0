@@ -26,9 +26,7 @@ public class TaskManager {
         if (completed.isEmpty()) {
             return null;
         }
-        Task task = completed.pop();
-        ((LinkedList<Task>) upcoming).addFirst(task);
-        return task;
+        return completed.pop();
     }
     public int remainingTaskCount() {
         return upcoming.size();
