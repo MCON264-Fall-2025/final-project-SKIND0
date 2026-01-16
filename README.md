@@ -28,6 +28,11 @@ FIFO, queue naturally models task scheduling workflow. is efficient O(1) enqueue
 - Stack (TaskManager)
 private final Stack<Task> completed
 undo requires LIFO for most recent task to be undone first. stack also provides O(1) push and pop.
+
+- TreeMap (VenueSelector)
+private final TreeMap<Double, List<Venue>> venuesByCost
+Maintains venues sorted by cost automatically using TreeMap
+Avoids O(n log n) sorting on every selectVenue() call
  
 - HashMap<String, Queue<Guest>> (SeatingPlanner)
 Map<String, Queue<Guest>> groupQueues
@@ -39,10 +44,11 @@ maps table numbers to lists of guests seated at each table. gives a clear repres
 
 Algorithms Used
 
-- Sorting Algorithm: Collections.sort() with Custom Comparator
-  Where: VenueSelector.selectVenue()
-  Algorithm: Timsort (Java's built-in sorting algorithm)
-  Why: Need to find the best venue (cheapest with smallest capacity if tied) from all valid options. Sorting ensures we get the optimal choice.
+- TreeMap for Venue Selection**
+ Where: VenueSelector constructor and selectVenue()
+ Old approach: Sorted on every call - O(n log n) per call
+ New approach: TreeMap maintains sorted order - O(n) per call
+ TreeMap built once in constructor, then iteration is already sorted
 
 - Searching Algorithm: HashMap Lookup
   Where: GuestListManager.findGuest()
@@ -56,14 +62,9 @@ Big O Complexity
   Complexity: O(1) average case
   Explanation: Uses HashMap.get() which provides constant-time lookup. The hash function computes the bucket location immediately without searching through the entire guest list. In the worst case (all guests hash to same bucket), this      degrades to O(n), but with a good hash function this is extremely rare.
   
-- Selecting a Venue
-  Method: VenueSelector.selectVenue(double budget, int guestCount)
-  Complexity: O(n log n) where n = number of venues
-  Breakdown:
-  Filter venues by budget/capacity: O(n) - single pass through all venues
-  Sort filtered venues: O(m log m) where m = number of valid venues (using Timsort)
-  Return first venue: O(1) - direct array access
-  Overall: O(n + m log m) which simplifies to O(n log n) since m ≤ n. The sorting step dominates.
+- Selecting a Venue - O(n) per call (after O(n log n) constructor)
+  Constructor builds TreeMap: O(n log n) one time
+  selectVenue iterates sorted TreeMap: O(n)
   
 - Generating Seating
   Method: SeatingPlanner.generateSeating(List<Guest> guests)
