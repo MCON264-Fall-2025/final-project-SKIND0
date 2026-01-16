@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="12368d1e-8f5d-4447-87ad-5d1eb510728a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/course/eventplanner/service/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/course/eventplanner/service/TaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/course/eventplanner/TaskManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/course/eventplanner/TaskManagerTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="37a2YppHpUoruJNnTsN1WExfp8O" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.MainTest.executor": "Run",
+    "JUnit.MainTest.testAddGuest.executor": "Run",
+    "JUnit.MainTest.testLoadSampleData.executor": "Run",
+    "JUnit.edu.course.eventplanner in event-planner-mini.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/sarah/OneDrive/Documents/GitHub/final-project-SKIND0/src/test/java/edu/course/eventplanner",
+    "last_opened_file_path": "C:/Users/sarah/OneDrive/Documents/GitHub/final-project-SKIND0",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="edu.course.eventplanner" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.edu.course.eventplanner in event-planner-mini">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.course.eventplanner.Main" />
+      <module name="event-planner-mini" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.course.eventplanner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="event-planner-mini" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.course.eventplanner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.course.eventplanner" />
+      <option name="MAIN_CLASS_NAME" value="edu.course.eventplanner.MainTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.testAddGuest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="event-planner-mini" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.course.eventplanner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.course.eventplanner" />
+      <option name="MAIN_CLASS_NAME" value="edu.course.eventplanner.MainTest" />
+      <option name="METHOD_NAME" value="testAddGuest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.testLoadSampleData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="event-planner-mini" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.course.eventplanner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.course.eventplanner" />
+      <option name="MAIN_CLASS_NAME" value="edu.course.eventplanner.MainTest" />
+      <option name="METHOD_NAME" value="testLoadSampleData" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="edu.course.eventplanner in event-planner-mini" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="event-planner-mini" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.course.eventplanner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.course.eventplanner" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="final-project-SKIND0" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="final-project-SKIND0" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.edu.course.eventplanner in event-planner-mini" />
+        <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MainTest.testAddGuest" />
+        <item itemvalue="JUnit.MainTest.testLoadSampleData" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="12368d1e-8f5d-4447-87ad-5d1eb510728a" name="Changes" comment="" />
+      <created>1767126914532</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1767126914532</updated>
+      <workItem from="1767126915657" duration="5905000" />
+      <workItem from="1767140233979" duration="979000" />
+      <workItem from="1767211828694" duration="154000" />
+      <workItem from="1767299632185" duration="28000" />
+      <workItem from="1767723197293" duration="3313000" />
+      <workItem from="1767737856959" duration="91000" />
+      <workItem from="1768361887007" duration="1205000" />
+      <workItem from="1768367040512" duration="3633000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.py" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
