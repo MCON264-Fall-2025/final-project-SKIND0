@@ -81,6 +81,8 @@ public class TaskManagerTest {
         assertNotNull(undone, "Should return undone task");
         assertEquals("Task 2", undone.getDescription(),
                 "Should undo most recently completed task (LIFO)");
+        assertEquals(1, manager.remainingTaskCount(),
+                "Undone task should be back in queue");
     }
 
     @Test
@@ -99,6 +101,8 @@ public class TaskManagerTest {
                 "Should undo B second");
         assertEquals("A", manager.undoLastTask().getDescription(),
                 "Should undo A third (first completed)");
+        assertEquals(3, manager.remainingTaskCount(),
+                "All undone tasks should be back in queue");
     }
 
     @Test
@@ -121,11 +125,13 @@ public class TaskManagerTest {
         assertEquals(1, manager.remainingTaskCount());
 
         manager.undoLastTask();
-        assertEquals(1, manager.remainingTaskCount(),
-                "Should still have Task 3 remaining");
+        assertEquals(2, manager.remainingTaskCount(),
+                "Should have 2 tasks: undone Task 2 + original Task 3");
+
 
         Task next = manager.executeNextTask();
-        assertEquals("Task 3", next.getDescription());
+        assertEquals("Task 2", next.getDescription(),
+                "Undone task should be executed first (added to front)");
     }
 
     @Test
